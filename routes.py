@@ -10,6 +10,10 @@ def index():
 def about():
   return render_template("about.html")
 
+@app.route("/rate")
+def rate():
+  return render_template("rate.html")
+
 if __name__ == "__main__":
   app.run(
     host="0.0.0.0",
